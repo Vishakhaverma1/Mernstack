@@ -1,0 +1,110 @@
+#carouseldiv{
+    margin-top: 3.5rem;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us{
+    background-color: #f3fafd;
+    
+  }
+
+  
+  .why-us .content {
+    padding: 60px 100px 0 100px;
+  }
+  
+  .why-us .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #37517e;
+  }
+  
+  .why-us .content p {
+    font-size: 17px;
+    color: #848484;
+  }
+  
+  .why-us .img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  
+  .why-us .accordion-button span {
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .accordion-item p{
+    font-size: 18px;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    font-weight: 600;
+  }
+  
+  .why-us .accordion-item{
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 6rem;
+  }
+  
+  .why-us img{
+    width: 550px;
+    height: 500px;
+    margin-top: 130px;
+    margin-left: 50px;
+  }
+  
+  @media (max-width: 1024px) {
+  
+    .why-us .content,
+    .why-us .accordion-collapse {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .why-us .img {
+      min-height: 400px;
+    }
+  
+    .why-us .content {
+      padding-top: 30px;
+    }
+  
+    .why-us .accordion-collapse {
+      padding-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .why-us img{
+      width: 350px;
+      height: 400px;
+      margin-top: 50px;
+      margin-left: -10px;
+  }
+  .why-us .accordion-item{
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 0rem;
+  }
+  
+  }
+  
+  
+  

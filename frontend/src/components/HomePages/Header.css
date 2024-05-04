@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+
+  .header{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40, 58, 90, 0.9);
+    background-position: center;
+    border: 2px;    
+}
+
+.headerimg{
+    height: 375px;
+    width: 300px;
+    position: absolute;
+    position: sticky;
+}
+
+
+#edu h4{
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#edu span{
+    position: relative;
+    font-size: 4.5rem;
+    margin-top: 40px;
+    font-weight: 600;
+    color: #222;
+    font-family: "Kalam", cursive;
+    text-shadow: 0 0 5px #00b3ff ,0 0 5px #00b3ff , 0 0 5px #00b3ff , 0 0 5px #00b3ff , 0 0 5px #00b3ff;
+
+}
+#edu span::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 8s linear infinite;
+
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 105%;
+    }
+}
+
+  #Counselling{
+    color: #fff;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  
+  #Counselling h2{
+    font-weight: 600;
+  }
+  
+  #Counselling h2 span{
+    color: black;
+    font-family: "Kalam", cursive;
+  }
+  
+  #Counselling .btn-get-started{
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+    display: flex;
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+    background: #00b3ff;
+    color: #fff;
+    border-radius: 50px;
+    border-color:#00b3ff;
+  }
+  
+  #Counselling .btn-get-started:hover {
+    background: #209dd8;
+  }
+  #Counselling .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+  #Counselling .btn-watch-video{
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+    line-height: 1;
+    transition: 0.5s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #Counselling .btn-watch-video i{
+    font-size: 25px;
+    margin: 5px;
+  }
+  
+  #svg1{
+    margin-top: -100px;
+    position: relative;
+    z-index: 36;
+    fill: white;
+  }
+  
+  @media(max-width:700px){
+    .header{
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+        background-position: center;
+        background-size: cover;
+        border: 2px;    
+        position: sticky;
+    }
+    #svg1{
+        margin-top: 10px;
+    }
+    #Counselling .btn-get-started{
+        text-decoration: none;
+        margin: 10px;
+        margin-left: -3rem;
+        font-weight: 600;
+        display: flex;
+        font-size: 16px;
+        padding: 10px 24px 11px 24px;
+        background: #00b3ff;
+        color: #fff;
+        border-radius: 50px;
+    }
+  }
+
+  @media(max-width:992px){
+    .headerimg{
+        display: none;
+    }
+    #svg1{
+        margin-top: 10px;
+    }
+    
+  }
+
+  
+/* popup style */
+
+#regiter_div{
+
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left : 15px;
+  }
+  #register_heading{
+    margin-left: 20px;
+    color: coral;
+  }
+  
+  #registration_form{
+    display: flex;
+  }
+  
+  #username,#schoolname,#mobilenumber,#whatsappnumber,#email, #tenpercante,#twelthpercante,#city{
+    height: 45px; 
+    background: none; 
+    margin-bottom: 2px;
+    display: inline-block;
+    outline: none;
+    box-shadow: none;
+  }
+  #course{
+    height: 40px;
+    width: 290px;
+  }
+  #registration_img{
+    height: 380px;
+    margin-top: -10px;
+    margin-left: 70px;
+  }
+  .one{
+    width: 500px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .placeholder{
+    margin-top: -6.1vh;
+    color: rgb(79, 79, 79);
+  
+  }
+  
+  .placeholder i{
+    margin: 12px;
+    font-size: small;
+    padding: 2px ;
+    background-color: white;
+  }
+  
+  .placeholder span{
+    font-size : small;
+    background-color: white;
+    padding: 2px;
+  }
+  
+  .placeholder #regspan{
+    color: chocolate;
+  }
+  #regbtn{
+    background-color: coral;
+    height: 40px;
+    width: 150px;
+    margin-left: 465px;
+    border-radius: 5px;
+    border: 2px coral;
+  }
+  .input1:focus ~ .placeholder,
+  .input2:focus ~ .placeholder {
+    margin-top: -4.3rem;
+    font-size: x-small;
+    background: white;
+    width: 170px;
+    margin-left: 5px; 
+  }
+  
+  .input1:not(:placeholder-shown).input1:not(:focus)~ .placeholder,
+  .input2:not(:placeholder-shown).input2:not(:focus)~ .placeholder{
+    margin-top: -4rem;
+    font-size: x-small;
+    background: white;
+    width: 170px;
+    margin-left: 5px;
+  }
+  
+  .input1:focus ,
+  .input2:focus{
+    box-shadow: none;
+    border: 2px solid coral;
+  }
+  
+  #category,#cources{
+    width: 290px;
+    height: 40px;
+  }
+  
+  @media (max-width: 575px) {
+  #registration_form{
+  display: block;
+  }
+  
+  #username,#schoolname,#mobilenumber,#whatappnumber,#alternumber, #tenpercante,#twelthpercante,#city{
+  height: 45px; 
+  width: 300px;
+  background: none; 
+  margin-bottom: 2px;
+  display: inline-block;
+  outline: none;
+  box-shadow: none;
+  }
+  
+  #regbtn{
+  background-color: coral;
+  height: 40px;
+  width: 150px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 2px coral;
+  }
+  
+  #registration_img{
+  height: 380px;
+  margin-top: 5px;
+  margin-left: 20px;
+  }
+  }
+  

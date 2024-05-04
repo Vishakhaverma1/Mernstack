@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+  
+/*--------------------------------------------------------------
+# Slider section
+--------------------------------------------------------------*/
+/* .movies-slider h2{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #0c64e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+  
+  .movies-slider h2 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #0c64e9);
+    -webkit-background-clip: text; /* For WebKit-based browsers */
+    -moz-background-clip: text; /* For Firefox */
+    background-clip: text; /* Standard property */
+    color: transparent; /* This line is equivalent to -webkit-text-fill-color: transparent; */
+}
+
+  
+  .movies-slider{
+  background-color: #010718;
+  }
+  .scroll-tray {
+  white-space: nowrap;
+  }
+  .scroll-tray div {
+  display: inline-block;
+  }
+  
+  .scroll-tray img {
+  border-radius: 0.3rem;
+  margin: 7px 5px;
+  padding: 0;
+  width: 340px;
+  }
+  
+  .scroll-holder {
+  overflow-x: hidden;
+  margin: 50px auto;
+  background-color:#010718;
+  }
+  
+  .scroll-holder .scroll-tray:first-child {
+  animation: scroll-tray-hero 15s linear infinite;
+  }
+  
+  .scroll-holder .scroll-tray:last-child {
+  animation: scroll-tray-hero 15s linear infinite;
+  }
+  
+  @keyframes scroll-tray-hero {
+  0% {
+    transform: translateX(0);
+  }
+  
+  99.99% {
+    transform: translateX(-3200px);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Frequently Asked Questions
+  --------------------------------------------------------------*/
+  .faq {
+    background-color: #f3fafd;
+    padding: 3rem;
+  }
+  
+  .faq .accordion-button span {
+    color: #47b2e4;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .accordion-item p{
+    font-size: 18px;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    font-weight: 600;
+  }
+  
+  .faq .accordion-item{
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 5rem;
+  }
+  
+  
+  @media (max-width: 575px) {
+  
+  .faq .accordion-item{
+  margin-bottom: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 0rem;
+  }
+  
+  }
